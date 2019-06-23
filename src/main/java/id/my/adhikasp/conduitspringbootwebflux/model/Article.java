@@ -16,7 +16,7 @@ import java.util.List;
 public class Article {
 
     @Id
-    private long id;
+    private String id;
 
     @Indexed
     private String slug;
@@ -37,7 +37,7 @@ public class Article {
 
     private long favoritesCount; // TODO this is global
 
-    @DBRef
+    // Relation
     private User author;
 
 }
